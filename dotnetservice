@@ -1,0 +1,22 @@
+#!/bin/bash
+
+SERVICE_NAME="my-dotnet-app"
+SERVICE_DESCRIPTION="My .NET Core application service"
+APP_PATH="/var/www/dotnet/app.dll"
+SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
+
+cat <<EOF > "$SERVICE_FILE"
+
+[Unit]
+Description=$SERVICE_DESCRIPTION
+
+[Service]
+ExecStart=/usr/bin/dotnet $APP_PATH
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+EOF
+
