@@ -21,6 +21,6 @@ Check the Status:
 
 Logs and Troubleshooting:
 </br>
-`journalctl -u myapp.service`
+`journalctl -u myapp.service -e`
 
 
