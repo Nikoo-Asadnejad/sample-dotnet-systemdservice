@@ -1,3 +1,5 @@
+This is config file for systemd unit of a .net application used for hosting .net application on a linux distribution.
+
 Rename ServiceName and Path in file.
 </br>
 
