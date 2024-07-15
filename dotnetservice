@@ -9,8 +9,10 @@ ExecStart=/usr/bin/dotnet /var/www/dotnet/app.dll
 Restart=always
 # Restart service after 5 seconds if the dotnet service crashes:
 RestartSec=5
-Environment=ASPNETCORE_ENVIRONMENT=Production
 User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://localhost:5001
+
 
 [Install]
 WantedBy=multi-user.target
