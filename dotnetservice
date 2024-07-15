@@ -7,7 +7,7 @@ Description="App Description"
 WorkingDirectory=/var/www/dotnet
 ExecStart=/usr/bin/dotnet /var/www/dotnet/app.dll
 Restart=always
-# Restart service after 10 seconds if the dotnet service crashes:
+# Restart service after 5 seconds if the dotnet service crashes:
 RestartSec=5
 Environment=ASPNETCORE_ENVIRONMENT=Production
 User=root
