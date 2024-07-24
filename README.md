@@ -25,4 +25,8 @@ Logs and Troubleshooting:
 </br>
 `journalctl -u myapp.service -e`
 
+Restart the service:
+</br>
+`sudo systemctl restart myapp.service`
+
 
